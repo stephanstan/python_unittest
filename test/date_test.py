@@ -28,8 +28,8 @@ class MyTestCase(unittest.TestCase):
     def test_today_day_of_week(self):
         # Days start at 0 for monday
         days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
-        print("Today is day number %d" % wd)
-        print("which is a " + days[wd])
+        print("Today is day number %d" % date.today().weekday())
+        print("which is a " + days[ date.today().weekday()])
 
 
 
